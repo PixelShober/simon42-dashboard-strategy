@@ -98,6 +98,21 @@ describe('createOverviewSection', () => {
     expect(section).toMatchSnapshot();
   });
 
+  it('limits the custom search card to lights, buttons, scripts and automations', () => {
+    const hass = makeHass({});
+    Registry.initialize(hass, {});
+    const section = createOverviewSection({
+      someSensorId: 'sensor.dummy',
+      showSearchCard: true,
+      config: {},
+      hass,
+    });
+
+    expect(section?.cards?.find((card) => card.type === 'custom:search-card')).toMatchObject({
+      included_domains: ['light', 'button', 'script', 'automation'],
+    });
+  });
+
   it('matches the snapshot when show_clock_card is disabled', () => {
     const hass = makeHass({});
     Registry.initialize(hass, {});

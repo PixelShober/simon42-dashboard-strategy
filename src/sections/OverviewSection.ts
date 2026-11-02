@@ -134,6 +134,7 @@ export function createOverviewSection(data: OverviewSectionParams): LovelaceSect
     } else {
       cards.push({
         type: 'custom:search-card',
+        included_domains: ['light', 'button', 'script', 'automation'],
         grid_options: { columns: 'full' },
       });
     }
