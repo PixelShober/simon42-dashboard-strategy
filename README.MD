@@ -1,18 +1,18 @@
 # simon42 Dashboard Strategy
 
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=for-the-badge)](https://github.com/hacs/integration)
-[![GitHub Release](https://img.shields.io/github/v/release/TheRealSimon42/simon42-dashboard-strategy?style=for-the-badge&color=green)](https://github.com/TheRealSimon42/simon42-dashboard-strategy/releases)
-[![GitHub Stars](https://img.shields.io/github/stars/TheRealSimon42/simon42-dashboard-strategy?style=for-the-badge&color=yellow)](https://github.com/TheRealSimon42/simon42-dashboard-strategy/stargazers)
+[![GitHub Release](https://img.shields.io/github/v/release/PixelShober/simon42-dashboard-strategy?style=for-the-badge&color=green)](https://github.com/PixelShober/simon42-dashboard-strategy/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/PixelShober/simon42-dashboard-strategy?style=for-the-badge&color=yellow)](https://github.com/PixelShober/simon42-dashboard-strategy/stargazers)
 ![AI-Assisted](https://img.shields.io/badge/AI--Assisted-blue?style=for-the-badge)
 [![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey?style=for-the-badge)](LICENSE)
 
 Eine modulare und hochkonfigurierbare Dashboard-Strategy für Home Assistant, die automatisch Views basierend auf Bereichen, Entitäten und deren Zuständen generiert.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheRealSimon42/simon42-dashboard-strategy/main/assets/Screenshot-simon42-strategy.png" alt="simon42 Dashboard Strategy — Übersicht" width="800" />
+  <img src="https://raw.githubusercontent.com/PixelShober/simon42-dashboard-strategy/main/assets/Screenshot-simon42-strategy.png" alt="simon42 Dashboard Strategy — Übersicht" width="800" />
 </p>
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=TheRealSimon42&repository=simon42-dashboard-strategy&category=plugin)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=PixelShober&repository=simon42-dashboard-strategy&category=plugin)
 
 ---
 
@@ -92,13 +92,13 @@ Wenn dir die simon42 Dashboard Strategy hilft, unterstütze die Weiterentwicklun
 
 ### HACS (empfohlen)
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=TheRealSimon42&repository=simon42-dashboard-strategy&category=plugin)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=PixelShober&repository=simon42-dashboard-strategy&category=plugin)
 
 <details>
 <summary>Alternative zum Button</summary>
 
 1. Gehe zu HACS → **Custom repositories**
-2. Füge das Repository hinzu: `https://github.com/TheRealSimon42/simon42-dashboard-strategy`
+2. Füge das Repository hinzu: `https://github.com/PixelShober/simon42-dashboard-strategy`
 3. Lade die "Simon42 Dashboard Strategy" herunter
 4. Klicke nach dem Download in HACS auf die Meldung "Neu laden", um die Installation abzuschließen
 
@@ -131,7 +131,7 @@ Die Strategy generiert das Dashboard automatisch aus deiner Home Assistant Konfi
 **Bereiche & Etagen einrichten** — Lege in Home Assistant unter **Einstellungen → Bereiche & Zonen** deine Räume an und weise sie optional Etagen zu. Geräte müssen einem Bereich zugeordnet sein, damit sie im Dashboard erscheinen.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheRealSimon42/simon42-dashboard-strategy/main/assets/Etagen-und-Bereiche.gif" alt="Etagen und Bereiche in Home Assistant einrichten" width="800" />
+  <img src="https://raw.githubusercontent.com/PixelShober/simon42-dashboard-strategy/main/assets/Etagen-und-Bereiche.gif" alt="Etagen und Bereiche in Home Assistant einrichten" width="800" />
 </p>
 
 **Geräte zuweisen** — Weise deine Geräte (Lampen, Sensoren, Rollos etc.) in den HA-Einstellungen einem Bereich zu. Die Strategy erkennt automatisch, welche Entitäten in welchem Raum sind.
@@ -143,13 +143,13 @@ Die Strategy generiert das Dashboard automatisch aus deiner Home Assistant Konfi
 - **Entität nicht sichtbar schalten** (empfohlen) — Setze eine Entität in den HA-Einstellungen auf **"Nicht sichtbar"**. Diese Entitäten werden von allen auto-generierten Strategies ausgeblendet — nicht nur von dieser, sondern auch von HA's eigenen Strategies. Das ist der sauberste Weg, um Entitäten aus automatischen Dashboards zu entfernen.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheRealSimon42/simon42-dashboard-strategy/main/assets/Entitaet-auf-nicht-sichtbar-stellen-via-entity-config.gif" alt="Entität auf nicht sichtbar stellen" width="800" />
+  <img src="https://raw.githubusercontent.com/PixelShober/simon42-dashboard-strategy/main/assets/Entitaet-auf-nicht-sichtbar-stellen-via-entity-config.gif" alt="Entität auf nicht sichtbar stellen" width="800" />
 </p>
 
 - **Label `no-dboard`** — Erstelle in Home Assistant unter **Einstellungen → Labels** ein Label `no-dboard` und weise es Entitäten zu. Die Entität wird aus allen simon42-Strategy-Dashboards global ausgeblendet, bleibt aber in anderen (manuellen) Dashboards sichtbar.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheRealSimon42/simon42-dashboard-strategy/main/assets/no-dboard-label.png" alt="Label no-dboard in Home Assistant erstellen" width="800" />
+  <img src="https://raw.githubusercontent.com/PixelShober/simon42-dashboard-strategy/main/assets/no-dboard-label.png" alt="Label no-dboard in Home Assistant erstellen" width="800" />
 </p>
 
 - **Im Strategy-Editor ausblenden** — Über das Konfigurationsmenü der Strategy können einzelne Entitäten pro Bereich und Domain individuell ein- und ausgeblendet werden. Das betrifft nur diese eine Strategy-Ansicht.
@@ -159,7 +159,7 @@ Mehr zur Filterung findest du im Abschnitt [Entity-Filterung](#entity-filterung)
 ## Dashboard erstellen
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheRealSimon42/simon42-dashboard-strategy/main/assets/simon42-Strategy-Download-DashboardAnlegen-StrategyCodeEinfugen.gif" alt="Dashboard erstellen — Schritt für Schritt" width="800" />
+  <img src="https://raw.githubusercontent.com/PixelShober/simon42-dashboard-strategy/main/assets/simon42-Strategy-Download-DashboardAnlegen-StrategyCodeEinfugen.gif" alt="Dashboard erstellen — Schritt für Schritt" width="800" />
 </p>
 
 1. **Einstellungen** → **Dashboards** → **Dashboard hinzufügen**
@@ -190,7 +190,7 @@ Anschließend öffnet sich über das **Stift-Icon** oben rechts in dem Strategy-
 Alle Einstellungen lassen sich bequem über den **grafischen Editor** vornehmen (Stift-Icon → Drei Punkte → Dashboard bearbeiten). Die folgenden Abschnitte dokumentieren die verfügbaren Optionen.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheRealSimon42/simon42-dashboard-strategy/main/assets/Editor-oeffnen.gif" alt="Editor öffnen" width="800" />
+  <img src="https://raw.githubusercontent.com/PixelShober/simon42-dashboard-strategy/main/assets/Editor-oeffnen.gif" alt="Editor öffnen" width="800" />
 </p>
 
 ### Übersicht
@@ -212,13 +212,13 @@ Automations-Idee: Anwesenheits-Automationen zusätzlich auf den Modus bedingen �
 **Zusammenfassungen** — Kacheln die den Status aller Lichter, Rollos, Sicherheits-Entitäten, Batterien und Klimageräte zusammenfassen. Jede Zusammenfassung kann einzeln ein- oder ausgeschaltet werden. Das Layout ist als 2-Spalten-Grid (Standard) oder 4-Spalten-Reihe konfigurierbar. Für Rollos kann optional eine **Teiloffen-Gruppe** aktiviert werden, die Rollos mit Position zwischen 1-99% separat anzeigt — inkl. Live-Übergängen während des Fahrens.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheRealSimon42/simon42-dashboard-strategy/main/assets/Klima-Zusammenfassung.gif" alt="Klima-Zusammenfassung aktivieren" width="800" />
+  <img src="https://raw.githubusercontent.com/PixelShober/simon42-dashboard-strategy/main/assets/Klima-Zusammenfassung.gif" alt="Klima-Zusammenfassung aktivieren" width="800" />
 </p>
 
 **Batterie-Optionen** — Mobile-App-Batterien (Smartphones, Tablets) können ausgeblendet werden. Die Schwellwerte für die Statusgruppen (Kritisch / Niedrig / Gut) sind frei einstellbar. Nicht erreichbare Sensoren werden automatisch als kritisch eingestuft.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheRealSimon42/simon42-dashboard-strategy/main/assets/Batterie-Schwellwerte-und-MobileAppBatt.gif" alt="Batterie-Schwellwerte und Mobile-App-Batterien" width="800" />
+  <img src="https://raw.githubusercontent.com/PixelShober/simon42-dashboard-strategy/main/assets/Batterie-Schwellwerte-und-MobileAppBatt.gif" alt="Batterie-Schwellwerte und Mobile-App-Batterien" width="800" />
 </p>
 
 **Info-Karten** — Optionale Wetter- und Energie-Karten auf der Übersicht.
@@ -252,7 +252,7 @@ strategy:
 **Favoriten** — Beliebige Entitäten, die als Kacheln unter den Zusammenfassungen erscheinen. Im Editor per Dropdown hinzufügen.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheRealSimon42/simon42-dashboard-strategy/main/assets/Favoriten-entity-hinzufügen.gif" alt="Favoriten hinzufügen" width="800" />
+  <img src="https://raw.githubusercontent.com/PixelShober/simon42-dashboard-strategy/main/assets/Favoriten-entity-hinzufügen.gif" alt="Favoriten hinzufügen" width="800" />
 </p>
 
 **Design: Theme & Hintergrundbild** *(ab v1.4.0)* — Im Editor-Panel „Design" (ganz unten) lassen sich ein Theme und ein Hintergrundbild für das gesamte Dashboard festlegen. Beides wird über die nativen View-Eigenschaften `theme` und `background` auf alle generierten Views gestempelt — Custom Views mit eigenem Theme/Hintergrund im YAML behalten ihre Einstellung. Beim Hintergrundbild sind Deckkraft und „beim Scrollen fixiert" direkt im Editor einstellbar; Größe, Ausrichtung und Wiederholung folgen sinnvollen Defaults und bleiben über den YAML-Schlüssel `background` (HA-View-Schema) anpassbar.
@@ -266,13 +266,13 @@ strategy:
 **Etagen-Gruppierung** — Bereiche können nach Etagen gegliedert werden. Jede Etage bekommt eine eigene Section mit Überschrift.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheRealSimon42/simon42-dashboard-strategy/main/assets/Bereiche-nach-Etagen-Gliedern.gif" alt="Bereiche nach Etagen gliedern" width="800" />
+  <img src="https://raw.githubusercontent.com/PixelShober/simon42-dashboard-strategy/main/assets/Bereiche-nach-Etagen-Gliedern.gif" alt="Bereiche nach Etagen gliedern" width="800" />
 </p>
 
 **Alert-Icons** — Optional können Alert-Icons auf den Bereichskarten angezeigt werden. Wenn aktiviert, zeigen die Karten ein oranges Icon, sobald ein relevanter Binärsensor im Bereich aktiv ist (z.B. Bewegung, Feuchtigkeit, Rauch, Wärme).
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheRealSimon42/simon42-dashboard-strategy/main/assets/Alert-Icons-Area-Card-Aktivieren.gif" alt="Alert-Icons auf Bereichskarten aktivieren" width="800" />
+  <img src="https://raw.githubusercontent.com/PixelShober/simon42-dashboard-strategy/main/assets/Alert-Icons-Area-Card-Aktivieren.gif" alt="Alert-Icons auf Bereichskarten aktivieren" width="800" />
 </p>
 
 **Schlösser in Räumen** — Optional können Schlösser (z.B. Nuki) in den Raum-Views angezeigt werden. Unabhängig davon erscheinen sie immer in der Sicherheits-Übersicht.
@@ -280,7 +280,7 @@ strategy:
 **Bereichssortierung** — Wahlweise die Reihenfolge aus Home Assistant verwenden oder im Editor per Drag & Drop festlegen.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheRealSimon42/simon42-dashboard-strategy/main/assets/Home-Assistant-Bereichs-Sortierung-verwenden.gif" alt="HA-Bereichssortierung verwenden" width="800" />
+  <img src="https://raw.githubusercontent.com/PixelShober/simon42-dashboard-strategy/main/assets/Home-Assistant-Bereichs-Sortierung-verwenden.gif" alt="HA-Bereichssortierung verwenden" width="800" />
 </p>
 
 **Bereichs-Verwaltung** — Bereiche ein-/ausblenden, Reihenfolge anpassen, Entitäten pro Bereich und Domain filtern — alles im Editor.
@@ -346,7 +346,7 @@ Einzelne Kameras lassen sich wie üblich ausblenden (Label `no-dboard` oder Bere
 **Lichter nach Etagen** — In der Lichter-View können Lichter nach Etagen gruppiert werden, mit Ein-/Ausschalt-Button pro Etage.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheRealSimon42/simon42-dashboard-strategy/main/assets/Lichter-nach-Etagen-Gliedern.gif" alt="Lichter nach Etagen gliedern" width="800" />
+  <img src="https://raw.githubusercontent.com/PixelShober/simon42-dashboard-strategy/main/assets/Lichter-nach-Etagen-Gliedern.gif" alt="Lichter nach Etagen gliedern" width="800" />
 </p>
 
 ### Erweiterte Funktionen
@@ -363,7 +363,7 @@ content: "Willkommen zuhause!"
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheRealSimon42/simon42-dashboard-strategy/main/assets/Eigene-Karten-hinzufugen.gif" alt="Eigene Karten hinzufügen" width="800" />
+  <img src="https://raw.githubusercontent.com/PixelShober/simon42-dashboard-strategy/main/assets/Eigene-Karten-hinzufugen.gif" alt="Eigene Karten hinzufügen" width="800" />
 </p>
 
 #### Eigene Sections *(ab v1.4.0)*
@@ -406,7 +406,7 @@ entity: sun.sun
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheRealSimon42/simon42-dashboard-strategy/main/assets/Custom-Badges-hinzufugen.gif" alt="Eigene Badges hinzufügen" width="800" />
+  <img src="https://raw.githubusercontent.com/PixelShober/simon42-dashboard-strategy/main/assets/Custom-Badges-hinzufugen.gif" alt="Eigene Badges hinzufügen" width="800" />
 </p>
 
 #### Wetter & Energie anpassen *(ab v1.4.0)*
@@ -477,7 +477,7 @@ sections:
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheRealSimon42/simon42-dashboard-strategy/main/assets/Custom-View-hinzufugen.gif" alt="Custom View hinzufügen" width="800" />
+  <img src="https://raw.githubusercontent.com/PixelShober/simon42-dashboard-strategy/main/assets/Custom-View-hinzufugen.gif" alt="Custom View hinzufügen" width="800" />
 </p>
 
 **Views aus anderen Dashboards referenzieren** *(ab v1.4.0)* — Statt YAML zu kopieren, kann eine Custom View auch eine View aus einem anderen Dashboard **per Referenz** einbinden (Button „View aus Dashboard referenzieren"). Die View wird bei jedem Laden live aus dem Quell-Dashboard übernommen — Änderungen dort erscheinen automatisch auch im Simon42-Dashboard, ganz ohne Copy & Paste. Dashboard und View werden per Dropdown gewählt; Titel, Pfad und Icon werden automatisch vorbefüllt und bleiben anpassbar.
@@ -514,7 +514,7 @@ Die Spalte **Seit** gibt an, ab welcher Version die Option verfügbar ist. „�
 | `alarm_entity` | string | — | — | Alarm-Panel Entity neben der Uhr |
 | `house_mode_entity` | string | — | v1.4.0 | `input_select`/`select`-Helfer als Dropdown-Tile direkt über dem Uhr/Alarm-Block |
 | `show_search_card` | boolean | `false` | — | Such-Karte auf der Übersicht |
-| `search_card_variant` | `custom` \| `tip` | `custom` | v1.4.0 | `custom` benötigt custom:search-card aus HACS; `tip` ist ein HA-nativer Hinweis auf die globale Suche |
+| `search_card_variant` | `custom` \| `tip` | `custom` | v1.4.0 | `custom` benötigt custom:search-card aus HACS und sucht in diesem Fork nur nach `light`, `button`, `script` und `automation`; `tip` ist ein HA-nativer Hinweis auf die globale Suche |
 | `show_light_summary` | boolean | `true` | — | Lichter-Zusammenfassung |
 | `show_light_view` | boolean | `false` | v1.4.0 | Licht-Unterseite (/lights) auch ohne Licht-Zusammenfassung bereitstellen |
 | `show_covers_summary` | boolean | `true` | — | Rollo-Zusammenfassung |
@@ -763,7 +763,7 @@ Siehe LICENSE-Datei für vollständige Details.
 
 ## Support
 
-- **[GitHub Issues](https://github.com/TheRealSimon42/simon42-dashboard-strategy/issues)**
+- **[GitHub Issues](https://github.com/PixelShober/simon42-dashboard-strategy/issues)**
 - **[simon42 Community](https://community.simon42.com/)**
 
 ---

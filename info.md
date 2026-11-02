@@ -12,6 +12,7 @@ Eine modulare und hochkonfigurierbare Dashboard-Strategy für Home Assistant, di
 - **Eigene Karten, Badges & Views** — via YAML frei erweiterbar
 - **Mehrsprachig** — Deutsch, Englisch, Russisch
 - **Performance-optimiert** — Code-Split Bundles, Registry-Caching, reaktive Karten
+- **Eingeschränkte Suche (Fork)** — Die Custom Search Card zeigt nur Lichter, Buttons, Skripte und Automationen
 
 ## Erste Schritte
 
@@ -26,4 +27,4 @@ strategy:
 
 Danach lässt sich alles über den grafischen Editor konfigurieren (Stift-Icon oben rechts).
 
-Die Schritt-für-Schritt-Anleitung mit Video und die vollständige Konfigurationsreferenz stehen im [README](https://github.com/TheRealSimon42/simon42-dashboard-strategy#readme).
+Die Schritt-für-Schritt-Anleitung mit Video und die vollständige Konfigurationsreferenz stehen im [README](https://github.com/PixelShober/simon42-dashboard-strategy#readme).
